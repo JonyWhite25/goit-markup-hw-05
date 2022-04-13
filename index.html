@@ -71,7 +71,7 @@
                     <h1 class="title-hero">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <button class="main-btn" type="button">
+                    <button class="main-btn" type="button" data-modal-open>
                         Заказать услугу
                     </button>
                 </div>
@@ -137,26 +137,29 @@
                 <div class="container">
                     <h2 class="headerh2">Чем мы занимаемся</h2>
                     <ul class="list whatwedoo">
-                        <li>
+                        <li class="img-description-list">
                             <img
                                 src="./images/box1.jpg"
                                 alt="клавиатура"
                                 width="370"
                             />
+                            <p class="discription-img-title">Десктопные приложения</p>
                         </li>
-                        <li>
+                        <li class="img-description-list">
                             <img
                                 src="./images/box2.jpg"
                                 alt="ноутбук"
                                 width="370"
                             />
+                            <p class="discription-img-title">Мобильные приложения</p>
                         </li>
-                        <li>
+                        <li class="img-description-list">
                             <img
                                 src="./images/box3.jpg"
                                 alt="планшет"
                                 width="370"
                             />
+                            <p class="discription-img-title">Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
@@ -462,7 +465,18 @@
                     </ul>
                 </div>
             </div>
-            
         </footer>
+        <div class="backdrop" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-icon-close" width="11" height="11">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+
+
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
