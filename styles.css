@@ -394,7 +394,8 @@ border-color: var(--accent-color);
     margin: 0 auto;
 }
 .social-list-icon {
-    fill: var(--icon-color)
+    fill: var(--icon-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .social-list-item {
     margin-right: 10px;
@@ -412,7 +413,7 @@ border-color: var(--accent-color);
     height: 44px;
     background-color: #ffffff;
     border-radius: 50%;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -426,7 +427,7 @@ border-color: var(--accent-color);
 }
 
 .footer-social-list-icon {
-    fill: var(--main-background-color)
+    fill: var(--main-background-color);
 }
 
 .footer-social-list-link {
@@ -437,13 +438,10 @@ border-color: var(--accent-color);
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-list-link:hover .footer-social-list-icon,
-.footer-social-list-link:focus .footer-social-list-icon {
-    fill: var(--secondary-text-color);
-}
+
 
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
@@ -655,7 +653,7 @@ transform: translateY(0%);
     height: 100vh;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 300ms linear, visibility 500ms linear;
-
+    opacity: 1;
 }
 
 .backdrop.is-hidden {
